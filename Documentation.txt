@@ -1,0 +1,24 @@
+README
+
+A hack to make Link's directional movement closer match your input.
+
+Based on i_hate_drm's Control Fix hack for European and American versions.
+
+In ALBW, Link's directional movement is off by 5 degrees.
+
+Pressing up will make him walk up, and slightly left.
+
+This hack sets this adjustment factor to zero.
+
+This hack is compatible with a .3ds Decrypted JPN ROM of A Link Between Worlds(Zelda no Densetsu - Kamigami no Triforce 2). 
+
+You can apply this patch using Lunar IPS.
+
+
+DOCUMENTATION
+
+Address		   Old Value		     New Value
+5CC8E8 to 5CC8EF | 05 A9 96 3D C5 50 C8 3C | 00 00 00 00 00 00 00 00 // Fix Down
+5CCCF0 to 5CCCF7 | 05 A9 96 BD C5 50 C8 BC | 00 00 00 00 00 00 00 00 // Fix Right
+5CD0E8 to 5CD0EF | 05 A9 96 BD C5 50 C8 BC | 00 00 00 00 00 00 00 00 // Fix Up
+5CD4F0 to 5CD4F7 | 05 A9 96 3D C5 50 C8 3C | 00 00 00 00 00 00 00 00 // Fix Left
